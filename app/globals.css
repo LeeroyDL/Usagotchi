@@ -47,15 +47,14 @@ a{color:inherit;text-decoration:none}
   margin-bottom: 16px;
 }
 .dinoImg{
-  width: 220px;
-  height: 220px;
+  width: 196px;
+  height: 196px;
   object-fit: contain;
   object-position: center;
   display: block;
-  background: white;
-  border-radius: 18px;
-  border: 1px solid var(--line);
+  margin: 0 auto;
 }
+
 
 
 .quote{padding:12px 12px;border-radius:16px;background:white;border:1px solid var(--line);color:var(--ink)}
