@@ -63,10 +63,7 @@ a{color:inherit;text-decoration:none}
 .list{display:flex;flex-direction:column;gap:10px}
 .item{display:flex;justify-content:space-between;gap:12px;border:1px solid var(--line);background:white;border-radius:16px;padding:12px}
 .item strong{font-size:14px}
-@media (max-width:520px){
-  .nav{gap:6px}
-  .navlink{font-size:13px}
- }
+
 @media (max-width:520px){
   .nav{gap:6px}
   .navlink{font-size:13px}
@@ -74,7 +71,7 @@ a{color:inherit;text-decoration:none}
     width: 160px;
     height: auto;
     max-height: 160px;
+    object-fit: contain;
+    object-position: center;
   }
-
-.dinoWrap { overflow: visible !important; }
-.row { position: relative; z-index: 2; }
+}
