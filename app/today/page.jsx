@@ -218,14 +218,20 @@ export default function TodayPage() {
             <div style={{width: `${Math.round(progress * 100)}%`}} />
           </div>
           <div className="spacer" />
-         {message ? (
+         <div className="spacer" />
+
+<div className="progress" title="Progress to next level">
+  <div style={{ width: `${Math.round(progress * 100)}%` }} />
+</div>
+
+<div className="spacer" />
+
+{message ? (
   <div className="quote">{message}</div>
 ) : null}
 
-        </div>
-      </div>
+<div className="hr" />
 
-      <div className="hr" />
 
      <div style={{ marginTop: 16 }}>
   <div className="row">
