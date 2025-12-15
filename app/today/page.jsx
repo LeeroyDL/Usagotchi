@@ -186,14 +186,15 @@ export default function TodayPage() {
 
       <div className="hr" />
 
-      <div className="row">
-        <button className="btn" onClick={doCheckin} disabled={busy || today?.checked_in}>
-          {today?.checked_in ? "You already checked in ✅" : "Showed care today ❤️"}
-        </button>
-        <button className="btn secondary" onClick={logout} disabled={busy}>
-          Logout
-        </button>
-      </div>
+     <div style={{ marginTop: 16 }}>
+  <div className="row">
+    <button className="btn" ...>
+      Showed care today ❤️
+    </button>
+    ...
+  </div>
+</div>
+
 
       <div className="spacer" />
 
