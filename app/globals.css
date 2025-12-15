@@ -44,6 +44,7 @@ a{color:inherit;text-decoration:none}
   display:flex;
   gap:14px;
   align-items: flex-start;
+  margin-bottom: 16px;
 }
 .dinoImg{
   width:180px;
