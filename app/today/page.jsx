@@ -156,24 +156,62 @@ export default function TodayPage() {
       )}
 
       <div className="spacer" />
+<div
+  style={{
+    display: "flex",
+    gap: 16,
+    alignItems: "flex-start",
+  }}
+>
+  {/* Dino card */}
+  <div
+    style={{
+      width: 220,
+      padding: 12,
+      borderRadius: 18,
+      border: "1px solid var(--line)",
+      background: "white",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: 10,
+      boxSizing: "border-box",
+    }}
+  >
+    <img
+      src={dinoImage(stage)}
+      alt="Usagotchi dino"
+      style={{
+        width: 196,
+        height: 196,
+        objectFit: "contain",
+        objectPosition: "center",
+        display: "block",
+      }}
+    />
+    <div style={{ fontWeight: 800, fontSize: 18 }}>
+      {creature?.name ?? "Usagotchi"}
+    </div>
+  </div>
 
-      <div className="dinoWrap">
-        <img className="dinoImg" src={dinoImage(stage)} alt="Usagotchi dino" />
-        <div style={{flex:1, minWidth: 240}}>
-          <div className="kpi">
-            <div className="box">
-              <div className="label">Level</div>
-              <div className="value">{creature?.level ?? "—"}</div>
-            </div>
-            <div className="box">
-              <div className="label">Stage</div>
-              <div className="value">{creature?.stage ?? stage}</div>
-            </div>
-            <div className="box">
-              <div className="label">XP</div>
-              <div className="value">{creature?.xp ?? "—"}</div>
-            </div>
-          </div>
+  {/* Stats */}
+  <div style={{ flex: 1, minWidth: 240 }}>
+    <div className="kpi">
+      <div className="box">
+        <div className="label">Level</div>
+        <div className="value">{creature?.level ?? "—"}</div>
+      </div>
+      <div className="box">
+        <div className="label">Stage</div>
+        <div className="value">{creature?.stage ?? stage}</div>
+      </div>
+      <div className="box">
+        <div className="label">XP</div>
+        <div className="value">{creature?.xp ?? "—"}</div>
+      </div>
+    </div>
+  </div>
+</div>
 
           <div className="spacer" />
           <div className="progress" title="Progress to next level">
