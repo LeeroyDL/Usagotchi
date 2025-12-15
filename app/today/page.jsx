@@ -218,7 +218,10 @@ export default function TodayPage() {
             <div style={{width: `${Math.round(progress * 100)}%`}} />
           </div>
           <div className="spacer" />
-          {message ? <div className="quote">{message}</div> : null}
+         {message ? (
+  <div className="quote">{message}</div>
+) : null}
+
         </div>
       </div>
 
