@@ -190,7 +190,6 @@ export default function TodayPage() {
       }}
     />
     <div style={{ fontWeight: 800, fontSize: 18 }}>
-      {creature?.name ?? "Usagotchi"}
     </div>
   </div>
 
@@ -219,10 +218,6 @@ export default function TodayPage() {
           </div>
           <div className="spacer" />
          <div className="spacer" />
-
-<div className="progress" title="Progress to next level">
-  <div style={{ width: `${Math.round(progress * 100)}%` }} />
-</div>
 
 <div className="spacer" />
 
