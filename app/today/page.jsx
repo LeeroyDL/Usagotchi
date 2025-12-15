@@ -235,10 +235,9 @@ export default function TodayPage() {
 
      <div style={{ marginTop: 16 }}>
   <div className="row">
-    <button className="btn" ...>
+    <button className="btn">
       Showed care today ❤️
     </button>
-    ...
   </div>
 </div>
 
